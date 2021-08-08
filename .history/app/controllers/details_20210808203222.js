@@ -55,5 +55,5 @@ const renderContact = () => {
 
 
 
-renderCurrentFilm();
 renderContact();
+renderCurrentFilm();
