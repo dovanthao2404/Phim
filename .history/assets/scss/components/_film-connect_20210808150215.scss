@@ -1,0 +1,5 @@
+.film-connect {
+  h1 {
+    @include styleText($fs-8, $fw-3, $color-white);
+  }
+}

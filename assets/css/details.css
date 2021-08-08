@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  color: #fff;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  background-color: #353536;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.header-section {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.list-movie {
+  display: -ms-grid !important;
+  display: grid !important;
+  grid-gap: 0.66667rem;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.list-movie .movie__item {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.list-movie .movie__item .movie__content img {
+  width: 100%;
+  border-radius: 8px;
+  height: 270.05px;
+}
+
+.list-movie .movie__item .movie__content p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.list-movie .movie__item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.list-movie .movie__item:hover p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #ff6500;
+}
+
+.header {
+  padding: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #656774;
+}
+
+.header .logo-header h2 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #f46326;
+}
+
+.header .film-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .film-menu li {
+  margin-left: 70px;
+  position: relative;
+}
+
+.header .film-menu li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2rem;
+  height: 4px;
+  width: 0px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #ff6500;
+}
+
+.header .film-menu li:hover a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ff6500;
+}
+
+.header .film-menu li a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #e2ebfc;
+}
+
+.header .film-menu li.active a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ff6500;
+}
+
+.header .film-menu li.active::after {
+  width: 100%;
+}
+
+.film-carousel {
+  padding: 80px 0;
+}
+
+.film-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.film-content .film-img {
+  width: 30%;
+  margin-right: 30px;
+}
+
+.film-content .film-img img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.film-content .film-details {
+  width: 70%;
+  margin-left: 30px;
+}
+
+.film-content .film-details h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.film-content .film-details p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.film-content .film-details a {
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  outline: none;
+  background-color: #b46e13;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.film-content .film-details a:hover {
+  background-color: #ff6500;
+}
+
+.film-connect h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.film-connect .list-movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 0;
+}
+
+.film-comments {
+  padding: 80px 0;
+  background-color: #353536;
+}
+
+.film-comments h1 {
+  margin-bottom: 2rem;
+}
+
+.film-comments .comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 1.5rem;
+}
+
+.film-comments .comments img {
+  width: 40px;
+  margin-right: 0.5rem;
+}
+
+.film-comments .comments #comment {
+  padding: 1rem;
+  margin-left: 0.5rem;
+  width: 80%;
+  font-size: 1.1rem;
+}
+
+.film-comments .comments .user-comment {
+  margin-left: 0.5rem;
+  width: 80%;
+}
+
+.film-comments .comments .user-comment h3 {
+  margin-bottom: 0.5rem;
+}
+
+.film-comments .comments .user-comment p {
+  font-size: 1.1rem;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #656774;
+}
+
+footer p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #fff;
+}
+/*# sourceMappingURL=details.css.map */

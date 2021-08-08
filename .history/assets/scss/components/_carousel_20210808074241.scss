@@ -1,0 +1,23 @@
+.carousel__img {
+  position: relative;
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 540px;
+  }
+  .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    button {
+      zoom: 1.5 !important;
+      span {
+        background-color: $color-orange-2 !important;
+      }
+      span.active {
+        background-color: $color-orange-1 !important;
+      }
+    }
+  }
+}

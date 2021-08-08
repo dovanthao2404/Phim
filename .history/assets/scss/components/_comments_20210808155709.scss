@@ -1,0 +1,19 @@
+.film-comments {
+  padding: 80px 0;
+  background-color: $color-dark-3;
+  h1 {
+    margin-bottom: 2rem;
+  }
+  .input-comments {
+    display: flex;
+    align-items: start;
+    img {
+      width: 40px;
+      margin-right: 1rem;
+    }
+    #comment {
+      margin-left: 1rem;
+      width: 80%;
+    }
+  }
+}

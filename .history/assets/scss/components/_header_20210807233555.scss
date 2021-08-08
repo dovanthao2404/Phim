@@ -1,0 +1,26 @@
+.header {
+  padding: $pd-3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  .logo-header h2 {
+    @include styleText($fs-8, $fw-3, $color-orange-3);
+  }
+  .film-menu {
+    display: flex;
+    align-items: center;
+
+    li:not(last-child) {
+      margin-left: $mg-3;
+
+      &:hover a {
+        @include styleText($fs-7, $fw-2, $color-orange-1);
+      }
+
+      a {
+        @include styleText($fs-7, $fw-2, $color-white-2);
+      }
+    }
+  }
+}

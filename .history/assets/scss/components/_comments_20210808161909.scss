@@ -1,0 +1,32 @@
+.film-comments {
+  padding: 80px 0;
+  background-color: $color-dark-3;
+  h1 {
+    margin-bottom: 2rem;
+  }
+  .comments {
+    display: flex;
+    align-items: start;
+    margin-bottom: 1rem;
+    img {
+      width: 40px;
+      margin-right: 0.5rem;
+    }
+    #comment {
+      padding: 1rem;
+      margin-left: 0.5rem;
+      width: 80%;
+      font-size: $fs-2;
+    }
+    .user-comment {
+      margin-left: 0.5rem;
+      width: 80%;
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: $fs-2;
+      }
+    }
+  }
+}

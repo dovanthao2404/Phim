@@ -1,0 +1,22 @@
+.movie__item {
+  width: calc(100% / 6);
+  cursor: pointer;
+  transition: all 0.5s;
+  .movie__content {
+    padding: 0 0.333333rem;
+    img {
+      width: 100%;
+      border-radius: 8px;
+      height: 270.05px;
+    }
+    p {
+      @include styleText($fs-2, $fw-2, $color-white);
+    }
+  }
+  &:hover {
+    transform: scale(1.2);
+    p {
+      @include styleText($fs-2, $fw-2, $color-orange-1);
+    }
+  }
+}

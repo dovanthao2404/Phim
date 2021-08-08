@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon"
+    href="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.6435-1/p200x200/222962384_1192514064593966_355988139994644705_n.jpg?_nc_cat=108&ccb=1-4&_nc_sid=7206a8&_nc_ohc=vaVwO_Xy-u4AX9CaNGE&_nc_ht=scontent.fdad2-1.fna&oh=347d99b6532ee4eade32b7bea75ada9d&oe=61351871"
+    type="image/gif" sizes="16x16">
+
+  <title>Trang Phim</title>
+  <!-- Font gg -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Main Css -->
+  <link rel="stylesheet" href="../../assets/css/details.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header">
+      <div class="logo-header">
+        <h2>Thao</h2>
+      </div>
+      <div class="menu-header">
+        <ul class="film-menu">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Series movie</a>
+          </li>
+          <li>
+            <a href="#">Odd movie</a>
+          </li>
+          <li>
+            <a href="#">Cinema</a>
+          </li>
+          <li>
+            <a href="#">Animated cartoon</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+  <!-- Carousel -->
+  <section class="film-carousel">
+    <div class="container">
+      <div class="film-content">
+        <div class="film-img">
+          <img
+            src="https://www.fullphimz.net/static/5fe2d564b3fa6403ffa11d1c/60de6d7faa1bb691e514b6d4_poster-anh-la-mua-xuan-cua-em.jpg"
+            alt="">
+        </div>
+        <div class="film-details">
+          <h1>Ten phim</h1>
+          <p>Thoi luong: 180p</p>
+          <a href="https://www.fullphimz.net/phim/anh-la-mua-xuan-cua-em-you-are-my-spring-2021#" class="btn"
+            target="_blank">Xem
+            Phim</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Content -->
+  <section class="film-connect">
+    <div class="container">
+      <h1>Co then ban cung muon xem</h1>
+
+      <div class="list-movie">
+        <div class="movie__item">
+          <div class="movie__content">
+            <a href="${data.phim[loaiPhim][i].url}">
+              <img
+                src="https://www.fullphimz.net/static/5fe2d564b3fa6403ffa11d1c/60de6d7faa1bb691e514b6d4_poster-anh-la-mua-xuan-cua-em.jpg"
+                alt="">
+              <p>Ten Phim</p>
+            </a>
+          </div>
+        </div>
+        <div class="movie__item">
+          <div class="movie__content">
+            <a href="${data.phim[loaiPhim][i].url}">
+              <img
+                src="https://www.fullphimz.net/static/5fe2d564b3fa6403ffa11d1c/60de6d7faa1bb691e514b6d4_poster-anh-la-mua-xuan-cua-em.jpg"
+                alt="">
+              <p>Ten Phim</p>
+            </a>
+          </div>
+        </div>
+        <div class="movie__item">
+          <div class="movie__content">
+            <a href="${data.phim[loaiPhim][i].url}">
+              <img
+                src="https://www.fullphimz.net/static/5fe2d564b3fa6403ffa11d1c/60de6d7faa1bb691e514b6d4_poster-anh-la-mua-xuan-cua-em.jpg"
+                alt="">
+              <p>Ten Phim</p>
+            </a>
+          </div>
+        </div>
+        <div class="movie__item">
+          <div class="movie__content">
+            <a href="${data.phim[loaiPhim][i].url}">
+              <img
+                src="https://www.fullphimz.net/static/5fe2d564b3fa6403ffa11d1c/60de6d7faa1bb691e514b6d4_poster-anh-la-mua-xuan-cua-em.jpg"
+                alt="">
+              <p>Ten Phim</p>
+            </a>
+          </div>
+        </div>
+        <div class="movie__item">
+          <div class="movie__content">
+            <a href="${data.phim[loaiPhim][i].url}">
+              <img
+                src="https://www.fullphimz.net/static/5fe2d564b3fa6403ffa11d1c/60de6d7faa1bb691e514b6d4_poster-anh-la-mua-xuan-cua-em.jpg"
+                alt="">
+              <p>Ten Phim</p>
+            </a>
+          </div>
+        </div>
+        <div class="movie__item">
+          <div class="movie__content">
+            <a href="${data.phim[loaiPhim][i].url}">
+              <img
+                src="https://www.fullphimz.net/static/5fe2d564b3fa6403ffa11d1c/60de6d7faa1bb691e514b6d4_poster-anh-la-mua-xuan-cua-em.jpg"
+                alt="">
+              <p>Ten Phim</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© DoVanThao197</p>
+  </footer>
+
+
+
+
+  <!-- Main JS -->
+  <script type="module" src="../controllers/details.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .film-menu {
+    display: flex;
+    align-items: center;
+    li:not(last-child) {
+      margin-left: 2rem;
+    }
+  }
+}

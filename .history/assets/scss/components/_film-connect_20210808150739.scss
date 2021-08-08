@@ -1,0 +1,10 @@
+.film-connect {
+  text-align: center;
+  h1 {
+    @include styleText($fs-3, $fw-3, $color-white);
+  }
+
+  .list-movie {
+    display: flex;
+  }
+}

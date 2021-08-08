@@ -1,0 +1,9 @@
+.movie__item {
+  width: calc(100% / 6);
+  .movie__content {
+    padding: 0 0.333333rem;
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.header {
+  padding: $pd-3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-dark-1;
+  .logo-header h2 {
+    @include styleText($fs-8, $fw-3, $color-orange-3);
+  }
+  .film-menu {
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-left: $mg-3;
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 2rem;
+        height: 4px;
+        width: 0px;
+        transition: all 0.5s;
+        background-color: $color-orange-1;
+      }
+      &:hover a {
+        @include styleText($fs-7, $fw-2, $color-orange-1);
+      }
+
+      a {
+        @include styleText($fs-7, $fw-2, $color-white-2);
+      }
+    }
+
+    li.active {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Ngu mai lam tiep :))

@@ -1,0 +1,11 @@
+.list-movie {
+  display: grid;
+  grid-gap: 0.66667rem;
+  .movie__item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    img {
+      width: 100%;
+    }
+  }
+}

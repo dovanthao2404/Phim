@@ -1,0 +1,6 @@
+.film-connect {
+  text-align: center;
+  h1 {
+    @include styleText($fs-2, $fw-3, $color-white);
+  }
+}

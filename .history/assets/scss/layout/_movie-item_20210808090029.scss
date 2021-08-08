@@ -1,0 +1,18 @@
+#series-movie {
+  h3 {
+    @include styleText($fs-8, $fw-3, $color-dark-1);
+  }
+}
+.movie__item {
+  width: calc(100% / 6);
+  .movie__content {
+    padding: 0 0.333333rem;
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    p {
+      @include styleText($fs-2, $fw-2, $color-dark-2);
+    }
+  }
+}

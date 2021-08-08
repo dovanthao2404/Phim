@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.movie__item {
+  width: 100% / 6;
+}
+
+.movie__item img {
+  width: 100%;
+}
+
+.header {
+  padding: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #000;
+}
+
+.header .logo-header h2 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #f46326;
+}
+
+.header .film-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .film-menu li {
+  margin-left: 70px;
+  position: relative;
+}
+
+.header .film-menu li:hover a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ff6500;
+}
+
+.header .film-menu li a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #e2ebfc;
+}
+
+.header .film-menu li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2rem;
+  height: 4px;
+  width: 0px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #ff6500;
+}
+
+.header .film-menu li:hover::after {
+  width: 100%;
+}
+
+.carousel__img {
+  position: relative;
+}
+
+.carousel__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 540px;
+}
+
+.carousel__img .owl-dots {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+}
+
+.carousel__img .owl-dots button {
+  zoom: 1.5 !important;
+}
+
+.carousel__img .owl-dots button span {
+  background-color: #b46e13 !important;
+}
+
+.carousel__img .owl-dots button.active span {
+  background-color: #ff6500 !important;
+}
+/*# sourceMappingURL=main.css.map */

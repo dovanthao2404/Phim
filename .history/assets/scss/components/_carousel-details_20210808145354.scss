@@ -1,0 +1,43 @@
+.film-carousel {
+  padding: 80px 0;
+}
+
+.film-content {
+  display: flex;
+
+  .film-img {
+    width: 30%;
+    margin-right: $mg-1;
+
+    img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+    }
+  }
+  .film-details {
+    width: 70%;
+    margin-left: $mg-1;
+
+    h1 {
+      @include styleText($fs-8, $fw-3, $color-white);
+      margin-bottom: $mg-2;
+    }
+    p {
+      @include styleText($fs-2, $fw-2, $color-white);
+    }
+
+    button {
+      border-radius: 8px;
+      border: none;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      outline: none;
+      background-color: $color-orange-2;
+      transition: all 0.5s;
+      &:hover {
+        background-color: $color-orange-1;
+      }
+    }
+  }
+}

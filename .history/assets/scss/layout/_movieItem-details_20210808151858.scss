@@ -1,0 +1,26 @@
+.list-movie {
+  display: grid;
+  grid-gap: 0.66667rem;
+  .movie__item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    transition: all 0.5s;
+    .movie__content {
+      img {
+        width: 100%;
+        border-radius: 8px;
+        height: 270.05px;
+      }
+      p {
+        @include styleText($fs-2, $fw-2, $color-white);
+      }
+    }
+    &:hover {
+      transform: scale(1.2);
+      p {
+        @include styleText($fs-2, $fw-2, $color-orange-1);
+      }
+    }
+  }
+}

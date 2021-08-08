@@ -1,0 +1,6 @@
+footer {
+  padding: 20px 0;
+  p {
+    @include styleText($fs-2, $fw-2, $color-white);
+  }
+}

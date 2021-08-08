@@ -1,0 +1,14 @@
+// Helpers
+@import "./helpers/variable";
+@import "./helpers/mixin";
+
+// Base
+@import "./base/reset";
+
+// Layout
+@import "./layout/movie-item";
+
+// Components
+@import "./components/header";
+@import "./components/carousel-details";
+@import "./components/footer";

@@ -1,0 +1,12 @@
+.film-content {
+  display: flex;
+  .film-img {
+    width: 30%;
+    img {
+      width: 100%;
+    }
+  }
+  .film-details {
+    width: 70%;
+  }
+}
