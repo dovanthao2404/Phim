@@ -47,8 +47,9 @@ const app = {
   }
 
 }
+var n;
+const delegationFilm = function (e) {
 
-const delegationFilm = (e) => {
   return e.target;
 }
 

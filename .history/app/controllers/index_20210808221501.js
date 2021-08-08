@@ -25,7 +25,7 @@ const app = {
             html += `
           <div class="movie__item">
               <div class="movie__content">
-              <a href="details.html">
+              <a href="#">
                 <img
                   src="${data.phim[loaiPhim][i].imageUrl}"
                   alt="">
@@ -48,16 +48,19 @@ const app = {
 
 }
 
-const delegationFilm = (e) => {
+const delegationFilm = function (e) {
+  console.log(e.target)
   return e.target;
 }
 
 
-var x = listType.addEventListener("click", delegationFilm);
+function getDataFilmCurrent() {
+  listType.addEventListener("click", delegationFilm);
+}
 
+getDataFilmCurrent();
 
 
 app.start();
 
-export { x };
-
+export { getDataFilmCurrent };

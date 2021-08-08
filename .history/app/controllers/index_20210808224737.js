@@ -47,17 +47,16 @@ const app = {
   }
 
 }
-
-const delegationFilm = (e) => {
+var n;
+const delegationFilm = function (e) {
+  n = e.target;
   return e.target;
 }
 
 
 var x = listType.addEventListener("click", delegationFilm);
 
-
+console.log(x)
 
 app.start();
-
-export { x };
 

@@ -11,6 +11,11 @@ let listTypeFilm = [seriesMovie, cinema, animatedCartoon, oddMovie];
 
 const app = {
 
+  handleClick: function () {
+    listType.addEventListener("click", delegationFilm)
+
+
+  },
 
   renderView: function () {
     getData()
@@ -48,16 +53,10 @@ const app = {
 
 }
 
-const delegationFilm = (e) => {
-  return e.target;
+function getDataFilm() {
+
 }
-
-
-var x = listType.addEventListener("click", delegationFilm);
-
-
 
 app.start();
 
-export { x };
-
+export { getDataFilm };

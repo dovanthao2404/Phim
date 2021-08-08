@@ -1,5 +1,5 @@
 import { getData } from "./data.js";
-// import { x } from "./index.js"
+import { getDataFilmCurrent } from "./index.js"
 
 let listFilm = document.querySelector(".film-connect .list-movie");
 let filmContent = document.querySelector(".film-content");
@@ -54,6 +54,7 @@ const renderContact = () => {
       console.log(err)
     })
 }
+
 
 
 renderCurrentFilm();
